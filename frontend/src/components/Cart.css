@@ -1,0 +1,117 @@
+/* === CART PAGE STYLING (Only for Cart.jsx) === */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff, #e3f2fd);
+}
+
+/* Page title */
+.cart-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Container for all cart items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Each cart item as a beautiful card */
+.cart-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart item details */
+.cart-item-details {
+  text-align: left;
+}
+
+.cart-item-details h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-details p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.item-total {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Remove button */
+.remove-btn {
+  background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: linear-gradient(135deg, #e03e3e, #ff4d4d);
+  transform: scale(1.05);
+}
+
+/* Cart summary */
+.cart-summary {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cart-summary h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cart-summary span {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Checkout button */
+.checkout-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #0288d1);
+  transform: scale(1.05);
+}
